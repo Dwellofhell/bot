@@ -1,1 +1,4 @@
 TOKEN='6082936209:AAFERVeX4F-kZvZf1diEJteQvlmLdF989gk'
+MY_ID = 77777
+
+DB_FILENAME = 'botuploads.db'
