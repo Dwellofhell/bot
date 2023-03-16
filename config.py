@@ -1,4 +1,5 @@
-TOKEN='6082936209:AAFERVeX4F-kZvZf1diEJteQvlmLdF989gk'
-MY_ID = 77777
+from aiogram.utils.markdown import bold
 
-DB_FILENAME = 'botuploads.db'
+TOKEN='6082936209:AAFERVeX4F-kZvZf1diEJteQvlmLdF989gk'
+text = text(bold("Наши мероприятия"))
+
