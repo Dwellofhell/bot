@@ -13,20 +13,23 @@ dp=Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def process_start_comand(message: types.Message):
-    await message.reply("Привет!\nЯ IT-cube бот, что вас интерисует?", reply_markup=keyboards.greet_kb)
+    await message.reply("Привет!\nЯ IT-cube бот, что вас интерисует?", reply_markup=keyboards.greet_kb1)
 
 
 @dp.message_handler(commands=['help'])
 async def process_help_comand(message: types.Message):
     await message.reply("Напиши, и я отвечу так же.")
 
-@dp.message_handler(commands=['hi1'])
-async def process_hi1_command(message: types.Message):
-    await message.reply("Первое - изменяем размер клавиатуры", reply_markup=keyboards.greet_kb1)
 
 @dp.message_handler()
-async def echo_message(msg: types.Message):
-    await bot.send_message(msg.from_user.id, msg.text)
+async def echo_message(message: types.Message):
+    if message.text == 'Мероприятия🎉':
+        await bot.send_message(message.from_user.id,text="Вот группа вк с нужной тебе информацией:https: //vk.com/itcube3232")
+    elif message.text == 'Обучение👨‍🎓':
+        await bot.send_message(message.from_user.id, text="Вот телеграмм с нужной тебе информацией:https: //vk.com/itcube3232")
+    else:
+        await bot.send_message(message.from_user.id, text="Ответ мне не известен")
+
 
 
 
