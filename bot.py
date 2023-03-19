@@ -53,6 +53,7 @@ async def echo_message(message: types.Message):
     elif message.text == 'Курсы Python':
         await dp.bot.send_photo(message.from_user.id, photo='AgACAgIAAxkBAAIBZWQV4MMnF2IBOQSZg6ET0fwrQd_UAAJCyTEb4quxSC9PcmQsT8t7AQADAgADeQADLwQ', caption='Python это -  высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью, ориентированный на повышение производительности разработчика\n\nНа нашем курсе вы узнаете:\n  •Основы программирования на языке Python\n  •Научитесь писать и анализировать код, а так же искать в нем и устранять их',reply_markup=keyboards.inline1)
 
+
     elif message.text == 'Назад к мероприятиям':
         await dp.bot.send_photo(message.from_user.id,photo='AgACAgIAAxkBAAN2ZBOLAv7fhxr_bCMsdKpgr07pKy4AAi7IMRsf56BIbeVI2S2FraUBAAMCAAN5AAMvBA',caption='Наши мероприятия:\n1.Мы в digital-агентстве 🤩\n2.Программирование на Python',reply_markup=keyboards.greet_mr)
     elif message.text == 'Вернуться на главную':

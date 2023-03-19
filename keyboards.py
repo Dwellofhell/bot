@@ -12,7 +12,7 @@ greet_kb1=ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(
 button_mr = KeyboardButton('digital-агентство')
 button_mr1 = KeyboardButton('Python')
 button_bk1 = KeyboardButton('Вернуться на главную')
-greet_mr =ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(button_mr1,button_mr,button_bk1)
+greet_mr =ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True,row_width=2).add(button_mr1,button_mr).insert(button_bk1)
 
 button_bk=KeyboardButton('Назад к мероприятиям')
 greet_bk=ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True).add(button_bk)
