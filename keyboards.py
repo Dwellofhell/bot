@@ -19,9 +19,8 @@ greet_bk=ReplyKeyboardMarkup(resize_keyboard=True,one_time_keyboard=True).add(bu
 
 
 button_py=KeyboardButton('Курсы Python')
-button_dis=KeyboardButton('Графический дизайн')
 button_js = KeyboardButton('Курсы JavaScript')
-greet_study = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True).add(button_js,button_py,button_dis,button_bk1)
+greet_study = ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True,row_width=2).add(button_js,button_py).insert(button_bk1)
 
 il_button_join = InlineKeyboardButton('Записаться', callback_data='button1')
 inline1=InlineKeyboardMarkup().add(il_button_join)
